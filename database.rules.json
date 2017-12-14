@@ -1,0 +1,39 @@
+{
+  "rules": {
+
+    "Users": {
+        
+      "$uid": {
+         ".read": "auth != null && auth.uid == $uid",
+         ".write": "auth != null && auth.uid == $uid"
+      }
+    },
+    
+    "Items": {
+      	
+          
+				//".validate": "newData.child('creatorId').val() === auth.uid || data.parent().child('creatorId').val() === auth.uid",  
+				
+				".read": "auth != null",
+          
+        "$itemid": {
+
+						//only write if nothing there already OR edit if you're the owner
+          	".write": "!data.exists() || auth.uid == data.child('creatorId').val()", 
+         
+        		"voters": {
+              	"$voterid": {
+
+									//Only allow an upvote if it is not already there (index by userId as the voterid)
+              		".write":  "auth != null && data.parent().hasChild($voterid) == false" //data.parent().hasChild($voterid) == false"
+                }
+            }
+        }
+            
+            
+       
+         
+        
+    }
+  }
+}

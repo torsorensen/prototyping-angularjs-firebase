@@ -1,0 +1,27 @@
+/**
+    Mobile first.
+    See media queries below.
+*/
+#login {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    text-align: center;
+    width:300px;
+
+    input {
+        width: 100%;
+        min-width:268px;
+        margin-bottom:4px;
+        height:41px;
+        line-height:41px;
+    }
+    #statusMsg {
+        margin:20px 0;
+        height:40px;
+    }
+    .btn {
+        width: 100%;
+    }
+}

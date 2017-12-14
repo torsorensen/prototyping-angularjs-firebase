@@ -1,0 +1,38 @@
+/** 
+	Bootstrap override
+*/
+.container {
+	padding:0 15px;
+}
+.row {
+	margin:0;
+}
+.navbar-toggle {
+	min-width:0;
+}
+
+
+
+@media (min-width: $screen-sm-min) {
+	.container {
+		padding:0;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.container {
+	    width: 750px;
+    }
+}
+@media (min-width: 992px) {
+	.container {
+	    width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+	    width: 80%;
+	    max-width: 1536px;
+	}
+}

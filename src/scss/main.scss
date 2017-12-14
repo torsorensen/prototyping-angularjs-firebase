@@ -1,0 +1,27 @@
+//
+// Main stylesheet.
+// Should import all the other stylesheets
+//
+
+// Variables, mixins, fonts
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_fonts.scss";
+
+//General styling
+//@import "layout/_animation";
+@import "layout/_buttons";
+@import "layout/_defaults-override";
+@import "layout/_bootstrap-override";
+@import "layout/_etc";
+
+//Application specific styling
+@import "application/_login";
+@import "application/_header";
+@import "application/_item";
+
+//Print sheet
+@import "layout/_print";
+
+
+

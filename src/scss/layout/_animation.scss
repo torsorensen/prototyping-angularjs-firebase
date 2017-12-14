@@ -1,0 +1,100 @@
+/**
+    Fade in when using .fade-in class or using ng-animate
+*/
+.fade-in,
+.ng-enter,
+.ng-hide-remove  {
+    // opacity:0;
+
+    -webkit-animation:fadeIn 0.7s;
+    -moz-animation:fadeIn 0.7s;
+    -o-animation:fadeIn 0.7s;
+    animation: fadeIn 0.7s;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+.fade-in-slow {
+
+    // opacity:0;
+    -webkit-animation:fadeIn 2.0s !important;
+    -moz-animation:fadeIn 2.0s !important;
+    -o-animation:fadeIn 2.0s !important;
+    animation: fadeIn 2.0s !important;
+
+    -webkit-animation-fill-mode: forwards !important;
+    -moz-animation-fill-mode: forwards !important;
+    -o-animation-fill-mode: forwards !important;
+    animation-fill-mode: forwards !important;
+}
+@-webkit-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-o-keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+/**
+    Fade out when using .fade-out class or using ng-animate
+*/
+/*
+.ng-leave,
+.ng-hide-add,
+.fade-out {
+  //opacity:1;
+    -webkit-animation:fadeOut .99s;
+    -moz-animation:fadeOut .99s;
+    -o-animation:fadeOut .99s;
+    animation: fadeOut .99s;
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@-moz-keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@-o-keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}*/

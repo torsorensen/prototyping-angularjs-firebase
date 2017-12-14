@@ -1,0 +1,66 @@
+/** 
+	Custom buttons
+*/
+button,
+.btn {
+	font-size: $fontSizeSm;
+	min-width:100px;
+    padding: 6px 15px;
+    margin-bottom: 4px;
+	border:0;
+	background-color: $colTextLight;
+	color: $colWhite;
+	border-radius: 0px;
+	cursor:pointer;
+}
+.btn-primary {
+	background-color: $colPrimary;
+}
+.btn-cancel {
+	background-color: $colTextLight;
+}
+.btn-warning {
+	background-color: $colWarning;
+}
+.btn-container {
+	margin-top:20px;
+}
+
+//Text buttons
+.btn-text {
+	font-size: $fontSizeSm;
+    margin-top: 15px;
+    cursor:pointer;
+}
+.btn-text-left {
+    float: left;
+}
+.btn-text-right {
+    float: right;
+}
+
+//Upload forms where image is clickable
+.btn-image-upload {
+    position: relative;
+    width:500px;
+    max-width:100%;
+    height:auto;
+    min-height: 300px;
+
+    // make input span the size of parent
+	input {
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		width:100%;
+		height:100%;
+	    opacity: 0;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}

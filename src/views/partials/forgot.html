@@ -1,0 +1,17 @@
+<div id="login">
+
+    <h1>Forgot password</h1>
+
+    <div>
+        <input id="email" type="text" placeholder="< Email >" ng-model="email"/>
+    </div>
+
+    <div class="btn-container">
+	    <div id="statusMsg">{{statusMsg}}</div>
+
+        <button id="btnSendCode" class="btn btn-primary" ng-click="onSendCodeClicked()" >Reset password</button>
+
+        <span id="btnGotoBack" class="btn-text btn-text-left" ng-click="onGotoLoginClicked()">Back</span>
+	</div>  
+
+</div>

@@ -1,0 +1,41 @@
+/**
+    Global scss variables
+*/
+//Base colors
+$colYellow: #FBFC50;
+$colWhite: #fff;
+$colBlack: #000;
+$colGrey: #666;
+
+//Highlight colors
+$colBg: #F4F4F4;
+$colPrimary: #718EFD;
+$colWarning: red;
+
+//Font colors
+$colTextDark: #676767;
+$colTextLight: #9b9b9b;
+
+//Font sizes
+$fontSizeXs: 12px;
+$fontSizeSm: 14px;
+$fontSizeMd: 24px;
+$fontSizeLg: 28px;
+
+//Fonts
+//$fontFamMd: 'Helvetica Neue LT Std Md', Helvetica, Arial, sans-serif;
+//$fontFamLt: 'Helvetica Neue LT Std Lt', Helvetica, Arial, sans-serif;
+$fontFamBd: 'Helvetica Neue LT Std Bd', Helvetica, Arial, sans-serif;
+$fontFamRoman: 'Helvetica Neue LT Std Roman', Helvetica, Arial, sans-serif;
+
+//Fixed sizings
+$heightHeader: 60px;
+$heightHeaderDesktop: 80px;
+$paddingHeader: 30px;
+
+//Bootstrap breakpoints
+$screen-sm-min:768px;
+$screen-md-min:992px;
+$screen-lg-min:1200px;
+$screen-xl-min:1600px;
+$screen-xxl-min:2200px;

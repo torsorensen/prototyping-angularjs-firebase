@@ -1,0 +1,74 @@
+/** 
+	Defaults override
+*/
+body {
+	font-family: $fontFamRoman;
+	background-color:$colBg; 
+	color:$colTextDark;
+	overflow-y:scroll;
+}
+h1 {
+	font-size: $fontSizeLg;
+	margin:48px 0 36px 0;
+}
+h2 {
+	font-size: $fontSizeMd;
+	margin:24px 0;
+}
+h3 {
+	font-size: $fontSizeSm;
+	margin:10px 0;
+}
+a, a:hover {
+	color:$colTextDark;
+	text-decoration: none;
+}
+ul {
+	list-style: none; 
+	padding:0;
+}
+input, select {
+	
+	width:100%;
+	height: 41px;
+    line-height: 41px;
+
+	font-family: $fontFamRoman;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background-color: #fff;
+	border:1px solid $colBg;
+	padding:0 15px;
+    padding-top: 2px !important;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+select {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+textarea {
+	border:0;
+	padding:15px;
+	font-family: $fontFamRoman;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none; 
+	margin: 0; 
+}
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="password"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+//Hide Chrome auto fill yellow background
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}

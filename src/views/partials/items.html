@@ -1,0 +1,17 @@
+<div id="items" class="container">
+
+    <div class="row">
+
+    	<h1> items </h1>
+
+		<i class="fa fa-plus" aria-hidden="true" ng-click="onCreateItemClicked();"></i>
+        
+   		<div ng-repeat="item in synchedItems">
+   			<div class="btn-text" ng-click="onGotoItemClicked(item.$id)">{{item.name}} | {{totalItemVotes(item)}} </div>
+   		</div>
+
+   		
+    </div>
+
+</div>
+

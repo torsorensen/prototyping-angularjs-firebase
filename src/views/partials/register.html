@@ -1,0 +1,26 @@
+<div id="login">
+
+    <h1>Register</h1>
+
+    <div>
+        <input id="name" type="text" placeholder="< Full name >" ng-model="name" bind-key="onRegisterClicked()" key="13"/>
+    </div>
+    <div>
+        <input id="email" type="text" placeholder="< Email >" ng-model="email" bind-key="onRegisterClicked()" key="13"/>
+    </div>
+    <div>
+        <input id="password" type="password" placeholder="< Password >" ng-model="password" bind-key="onRegisterClicked()" key="13"/>
+    </div>
+    <div>
+        <input id="password2" type="password" placeholder="< Password again >" ng-model="password2" bind-key="onRegisterClicked()" key="13"/>
+    </div>
+
+    <div class="btn-container">
+	    <div id="statusMsg">{{statusMsg}}</div>
+        <button id="btnRegister" class="btn btn-primary" ng-click="onRegisterClicked()">Register</button>
+
+        <span id="btnGotoBack" class="btn-text btn-text-left" ng-click="onGotoLoginClicked()">Back</span>
+    
+	</div>  
+
+</div>

@@ -1,0 +1,44 @@
+<div id="item" class="container">
+
+    <div class="row">
+
+        <h1 ng-if="!isCreator()">item: {{syncObjectItem.name}}</h1>
+        <h1 ng-if="isCreator()"><input ng-model="syncObjectItem.name" ng-model-options="{debounce: 750}"></input></h1>
+
+        <div>Creator Name: {{syncObjectItem.creatorName}}</div>
+        <div>Creator ID: {{syncObjectItem.creatorId}}</div>
+
+        <!-- Item image and upload -->
+        <img class="img-item" ng-if="!isCreator()" ngf-src="syncObjectItem.image.url" alt="Item image">
+        
+        <div ng-if="isCreator()">
+            <form name="itemUploadForm">
+
+                <div class="btn-image-upload">
+                    <input  type="file" ngf-select="" ng-model="picFile" name="file"  ngf-accept="'image/*'" required=""> 
+                    <img class="img-item" ngf-src="picFile || syncObjectItem.image.url || 'data/images/placeholder_submit.png'" alt="Item image">
+                </div>    
+
+                <div class="btn-container">
+                    <div class="btn btn-primary" ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-max-size="3MB" ng-disabled="!itemUploadForm.$valid" ng-click="onUploadPic(picFile)">Upload</div>
+                    <div class="btn" ng-click="onClearImageClicked();">Clear</div>
+                </div>
+
+                <div>
+                    <span ng-if="progress > 0" ng-bind="progress + '%'"> </span>
+                    <span ng-show="result == 200"> - Upload Successful</span>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="btn-container">
+            <div class="btn" back>Back</div>
+            <div class="btn" ng-click="onVoteClicked();">Vote</div>
+            <div class="btn" ng-click="onAddToOwnListClicked(syncObjectItem);">Add to own list</div>
+            <div ng-if="isCreator()" class="btn" ng-click="onDeleteClicked();">Delete (as owner)</div>
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,45 @@
+/** 
+	Font awesome
+*/
+i { 
+	cursor:pointer;
+}
+
+
+/** 
+	Twemoji Emoji support
+*/
+img.emoji {  
+    // Override any img styles to ensure Emojis are displayed inline
+    margin: 0px !important;
+    display: inline !important;
+}
+
+
+/** 
+	Helpers
+*/
+.full-width {
+	width:100%;
+}
+.no-pad, .no-padding {
+	padding:0;
+}
+.no-margin {
+	margin:0;
+}
+.print, .print-inline, .print-block {
+	display: none;
+}
+.bold {
+	font-family: $fontFamBd;
+}
+.clearfix, .clear-fix {
+	clear:both;
+}
+
+
+/** 
+	Custom classes
+*/
+

@@ -1,0 +1,36 @@
+<div id="profile" class="container">
+
+    <div class="row">
+
+      	<h1><input ng-model="syncObjectProfile.name" ng-model-options="{debounce: 750}"></input> </h1>
+
+        <!-- Image and upload -->
+        <div>
+
+            <form name="profileUploadForm">
+
+                <div class="btn-image-upload">
+                    <input  type="file" ngf-select="" ng-model="picFile" name="file"  ngf-accept="'image/*'" required=""> 
+                    <img class="img-profile" ngf-src="picFile || syncObjectProfile.profilePicture.url || 'data/images/placeholder_submit.png'" alt="Item image">
+                </div>    
+               
+                <div class="btn-container">
+                	<div class="btn btn-primary" ngf-pattern="'image/*'" ngf-accept="'image/*'" ngf-max-size="3MB" ng-disabled="!profileUploadForm.$valid" ng-click="onUploadPic(picFile)">Upload</div>
+       				<div class="btn" ng-click="onClearImageClicked();">Clear</div>
+				</div>
+
+				<div>
+                	<span ng-if="progress > 0" ng-bind="progress + '%'"> </span>
+                	<span ng-show="result == 200"> - Upload Successful</span>
+                </div>
+
+            </form>
+        </div>
+       
+        <div class="btn-container">
+       		<div class="btn" back>Back</div>
+		</div>
+    </div>
+
+</div>
+
