@@ -20,6 +20,10 @@ Current features implemented using best practice:
 * Firebase Storage (for uploading images from camera or media)
 * Sass stylesheets separated according to View
 
+## Preview
+
+For a running preview of the prototyping template, please visit http://prototyping-angularjs-firebase.herokuapp.com and use the authorised test account *test@test.dk* with password *qweqwe* (hosted on a free Heroku dyno, so be patient with the response time).
+
 ## Usage
 
 **Build source files**

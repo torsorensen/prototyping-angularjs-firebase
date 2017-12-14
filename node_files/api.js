@@ -2,15 +2,7 @@
 	Global Namespace and "public" vars
 */
 
-var api = {
-	/*projectName: "angular-template-e59e2",
-
-	login : {
-		name:"",
-		login:"",
-		password:""
-	}*/
-};
+var api = { };
 
 /**
 	"Public" exposed functions across server.
@@ -18,6 +10,8 @@ var api = {
 */
 
 module.exports = {
+	
+	/** CODE BELOW IS IF WE WANT TO PROCESS LOGIN SERVER SIDE WITHOUT FIREBASE AUTH */
 	/*login: function (login, password, res) {
 		api.login.login = login;
 		api.login.password = password;
@@ -50,11 +44,11 @@ var config = {
   //if file: serviceAccount: "angular-template-f0418690d4ad.json",
   //else inline
 	serviceAccount: {
-	    projectId: "angular-template-e59e2",
-	    clientEmail: "torsorensen@angular-template-e59e2.iam.gserviceaccount.com",
-	    privateKey: "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCQjXbhqsalVMrk\n4Lu3u0rBfvKTtWAPXargfK6R2hHhqpR8MbXPYKnIqwt/cyvO8tVFFG/XkzzyYhtf\nVupOPhZEL9FKYb+YcBPdbRLubrUoQhgudkpG+NCKZxYmDxufxXwfsYXhHNsRXLEz\n0vbdW2Nj7PuyvwAnfQL5GO6KXcvWZIUl8vQLlXHrasumeizFjpa3HWbhb+V2G1c6\nChTLjAAZv2r3/O7kp/5AdZaAjzqEsa6tYupCBw39FnjV/eH9hTI7v+meJve6vcln\nblWDD0krDwTa1qB8EN77ZcRo10Q3muUnCE69WoQjgqvzIiIPh4y6OX3H4AV9Tapr\n9ipmE8vXAgMBAAECggEAeB7WN1jukd0QbXnDBD8DNCAF/HCwTpSLtthlSJZqXZie\no0W7y4SMElDw0Qwnz2VDjJAbEI0uDE0yaduUAUjev/LsfF8WE9qu50YIgVJGABpM\nde+ecbO5uAlKAn5zeiVlrACdPB/6e0cHigU5V2DmCteXoUXPHwFnQxBQyXKAPLsz\noyQKxqqcBXtcAked0reV+hlGldAZDK+Iy+LMHnrGOXrtWMFocSB3UygcLbjv5t/g\nseSJ3zOuJ6atgC7GtLvneWfOhea2Jt6qdh3Rexz+f23uUh86Qo903nkk9cpqeAdW\nTkCCLiW/f3p8NdNNOVZtyFbdrouDxpCKJpkd+DYYIQKBgQDA3bPw+DwRXv4+B6Ik\nsIAhAABFrrofpFuaDnTPUIy6JFQp84Fs0w9O0MVuArEwe2nN2fcK6o9RXAHGMeqO\nCLVRxBxmRdu1abVGj4dNbyizfuC0WD0qeYFztEkb0DxpA+k097oNdyvlMjK4vLdr\nn/IjaUvNAtNvLLdlM6W2q8P4/QKBgQC/3xCZA94v+wGTvhO63fUqs/osDTRlZRqM\nqWnMoQC3wICjZSwZJ/LcgiLlW2pWhuJrnqeqmd8zxFA413/094ayBK6M9sIS2dHY\nWtMyTe7s7zEqDuYK/rKVPI3aoqYGHgGIXy7jz9GiIiJCvzWeNwH2y0tDMwCUf/zC\n06D2g4UqYwKBgBkfiCYWn/R/VE0OP3/aAgbKcj6hgRtIFKqfwXWT/5Dr1I7WaoCb\nib3xkhY/gYdYPDMVdonUfjDR9GU18WDpH310N2LXLMSX7YYwgiaDGWEwYOL9L5KN\n22AQFwnpeUUQvlso/fJtGKm1fUf1RUtevXMBb19YQ+SShZ1IOgjunQudAoGBALB1\nBV60H/MgdSLa/GovFvpe6wT4X+egQ/p5E8QNjgtwDt42fYflJYWGaXFl0TYidrli\n/+/180A4m06rYhJ4UngFtkIN7g5IJKVFYlYxNjrQ//YeHZKfCr4VIqCgVO/rSJ2S\nbB03UyQ5ICkikL0g+b1u2ZjDnxTzYBINb0tHSYDhAoGADOB4hZoNShjAI+TMKNPG\n+2QqxMnytXctsBPbQVsT+S7jNlEhekK+YOpMWyx9ZxEKEK13zs/5kI2YwP/HIInM\nDV1K3e7hkAiwY7y+4rHMjgWxlwbK4Az0nW7aElmDXZTvW1YCeGt0lAzeFtFz1W1c\nWBtoJhWmIjnXP8m54pkB7rQ=\n-----END PRIVATE KEY-----\n"
+	    projectId: "...........#replace...........",
+	    clientEmail: "...........#replace...........",
+	    privateKey: "...........#replace..........."
 	  },
-  databaseURL: "https://angular-template-e59e2.firebaseio.com/"
+  databaseURL: "...........#replace..........."
 };
 firebase.initializeApp(config);
 var rootRef = firebase.database().ref();
